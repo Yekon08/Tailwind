@@ -12,12 +12,15 @@
     <div class="grid md:grid-cols-3">
         <div class="md:col-span-1 md:flex md:justify-end">
             <nav class="text-right">
-                <div>
+                <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                         <a href="/" class="hover:text-gray-700">Food Ninja</a>
                     </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </div>
                 </div>
-                <ul class="text-sm mt-6">
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
                     <li class="text-gray-700 py-1">
                         <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
                             <span>home</span>
@@ -40,7 +43,7 @@
             </nav>
         </div>
 
-        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2 min-h-screen">
             <div class="flex justify-center md:justify-end">
                 <a href="#" class="btn text-primary md:border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
                 <a href="#" class="btn text-primary ml-2 md:border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
@@ -105,5 +108,7 @@
             </div>
         </main>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
